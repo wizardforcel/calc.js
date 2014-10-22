@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>简易计算器 by飞龙</title>
+<script src="calc.js"></script>
+<style>
+  body
+  {
+    background-color: #F2F2F2;
+    background-image: url("bg.jpg");
+    backgroud-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .form
+  {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #999999;
+    padding: 20px;
+  }
+  
+  input
+  {
+    border: 1px solid #999999;
+    margin: 5px;
+  }
+
+  .btn
+  {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .text
+  {
+    height: 40px;
+    width: 215px;
+    text-align: right;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  #btnc
+  {
+    width: 98px;
+  }
+</style>
+</head>
+<body>
+  <div class="form">
+    <input type="text" id="restext" class="text" readonly="1" value="0" />
+	<br />
+  
+    <input type="button" id="btnma" class="btn" value="M+" onclick="btnma_onclick()" />
+	<input type="button" id="btnms" class="btn" value="M-" onclick="btnms_onclick()" />
+	<input type="button" id="btnmc" class="btn" value="MC" onclick="btnmc_onclick()" />
+	<input type="button" id="btnmr" class="btn" value="MR" onclick="btnmr_onclick()" />
+	<br />
+  
+    <input type="button" id="btnc" class="btn" value="C" onclick="btnclr_onclick()"/>
+	<input type="button" id="btnmin" class="btn" value="(-)" onclick="btnmin_onclick()" />
+	<input type="button" id="btnback" class="btn" value="<-" onclick="btnback_onclick()" />
+	<br />
+	
+    <input type="button" id="btn7" class="btn" value="7" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btn8" class="btn" value="8" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btn9" class="btn" value="9" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btnadd" class="btn" value="+" onclick="btnsign_onclick(this)" />
+	<br />
+	
+	<input type="button" id="btn4" class="btn" value="4" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btn5" class="btn" value="5" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btn6" class="btn" value="6" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btnsub" class="btn" value="-" onclick="btnsign_onclick(this)" />
+	<br />
+
+	<input type="button" id="btn1" class="btn" value="1" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btn2" class="btn" value="2" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btn3" class="btn" value="3" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btnmul" class="btn" value="*" onclick="btnsign_onclick(this)" />
+	<br />
+	
+	<input type="button" id="btn0" class="btn" value="0" onclick="btnnum_onclick(this)" />
+	<input type="button" id="btnpt" class="btn" value="."  onclick="btnpt_onclick()" />
+	<input type="button" id="btneql" class="btn" value="=" onclick="btneql_onclick()" />
+	<input type="button" id="btndiv" class="btn" value="/" onclick="btnsign_onclick(this)" />
+	<br />
+  </div>
+</body>
+</html>
+<!-- v0.1 code by flygon - chi 2014.1.1 -->
